@@ -18,10 +18,53 @@
 
 public class ASCIIArt {
 	public static void main (String [] args) {
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
-		System.out.println("THIS IS MY ASCII ART!!!!");
+		System.out.println(" _____________________");
+		line();
+		System.out.println("\\");
+		line();
+		System.out.println("+\\");
+		line();
+		System.out.println("++\\");
+		leftSide();
+		System.out.println("______ |+++\\");
+		System.out.println("|            |######||++++\\");
+		jLine();
+		System.out.println("``````|");
+		jLineFull();
+		jLineFull();
+		jLineFull();
+		jLineFull();
+		jLineFull();
+		System.out.print("|    ________/######|");
+		rightSide();
+		System.out.print("\n|   /###############/");
+		rightSide();
+		System.out.print("\n|   |##############/ ");
+		rightSide();
+		System.out.print("\n|   \\#############/  ");
+		rightSide();
+		System.out.print("\n|    `````````````   ");
+		rightSide();
+		System.out.println("");
+		System.out.println("|__________________________|");
+		System.out.println("\nThe icon for a .java file in the Eclipse IDE.");
+	}
+	public static void line () {
+		leftSide();
+		System.out.print("       |");
+	}
+	public static void leftSide() {
+		System.out.print("|             ");
+	}
+	public static void rightSide() {
+		System.out.print("      |");
+	}
+	public static void jLine () {
+		System.out.print("|            |######|");
+	}
+	public static void jLineFull () {
+		jLine();
+		rightSide();
+		System.out.println("");
 	}
 }
